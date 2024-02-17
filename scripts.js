@@ -19,11 +19,16 @@ let mensagemDeErro = 'Erro com let! Preencha todos os campos';
 alert(mensagemDeErro);
 
 let usuario = prompt('Qual Nome do Usuário?');
-console.log(usuario)
+console.log(usuario);
 
 let idade_P = prompt('Qual sua Idade?');
-console.log(idade_P)
+console.log(idade_P);
 
+if (idade_P >= 18 ){
+    alert(`${usuario} Você pode tirar habilitação!`)
+}else{
+    alert(`${usuario } você tem menos de 18 anos, não pode tirar habilitação!`)
+};
 
 
 
